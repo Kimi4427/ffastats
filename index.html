@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Brought not to you by AAirCrafter -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>FFA Stats</title>
+</head>
+<body oncontextmenu="return false;">
+    <div id="mtoast" onclick="this.style.display='none'"></div>
+    <video loop muted autoplay>
+        <source src="https://stra.to/dl/BVQulFoOjDx9Zy7fFuxv/0220.mp4">
+    </video>
+    <h1>HGLABOR FFA Stats</h1>
+    <div class="search-container">
+        <input type="text" id="uuidInput" placeholder="Minecraft UUID/NAME">
+    </div>
+    <div class="table-container">
+        <table id="statsTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Statistik</th>
+                    <th onclick="sortTable(1)">Wert</th>
+                </tr>
+            </thead>
+            <tbody id="statsBody"></tbody>
+        </table>
+        <img id="playerSkin" src="" style="position: absolute; right: 60px; top: 60px; width: 300px;">
+        <div id="loading" class="loading" style="display: none;">Dein Internet ist langsam...</div>
+    </div>
+    <!-- <button class="fetchbtn" onclick="fetchStats()"></button>-->
+ <script src="main.js"></script> 
+</body>
+</html>
