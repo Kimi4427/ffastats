@@ -63,18 +63,17 @@
         }
         
         body {
-            background-color: #f4f4f9;
             margin: 0;
             padding: 20px;
             -webkit-user-select: none;
             -ms-user-select: none;
             user-select: none;
+  background-color: white;
+  color: black;
         }
 
         h1 {
             text-align: center;
-            color: #333;
-            background-color: gray;
             font-family: mcfont, sans-serif;
         }
         h1:active {
@@ -153,8 +152,7 @@
         }
 
         th {
-            background-color: gray;
-            color: white;
+            
             cursor: pointer;
             font-family: mcfont, sans-serif;
         }
@@ -210,4 +208,30 @@
     z-index: 9999;
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.keybinds{
+	position: absolute;
+  bottom: 10px;
+  width: 50%;
+  border: 3px solid #ff8080;
+	
+}
+#dragdiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#dragheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
 }
