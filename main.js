@@ -4,11 +4,11 @@ var input = document.querySelectorAll("input")[0];
 input.select(); 
 input.value = "";
 
-var texts = ["NoRiskk", "KimiKaccess", "Aim_Shock", "AAirCrafter", "BigBrainRobin29", "ltsonyxx", "BestAuto", "Winniepat"]; 
+var texts = ["NoRiskk", "KimiKaccess", "Aim_Shock", "AAirCrafter", "BigBrainRobin29", "ltsonyxx", "BestAuto", "Winniepat", "bybmfr", "bread", "//////////////////////////////////////////"]; 
 var currentTextIndex = 1;
 var l = texts[currentTextIndex].length;
 var current = 0;
-var time = 100;
+var time = 50;
 var userTyping = false;
 
 input.addEventListener("input", function() {
@@ -23,7 +23,7 @@ var write_text = function() {
     current++;
     setTimeout(write_text, time);
   } else {
-    setTimeout(delete_text, 1000); 
+    setTimeout(delete_text, 2500); 
   }
 };
 
@@ -55,6 +55,11 @@ document.addEventListener("keypress", function(event) {
   }
 });
 document.addEventListener("keypress", function(event) {
+  if (event.keyCode == 44) {
+window.open("/ffastats/c/r/e/d/i/t/s.html"); 
+  }
+  });
+document.addEventListener("keypress", function(event) {
   if (event.keyCode == 43) {
 var myWindow = window.open("", "MsgWindow", "width=1280,height=720");
   if (myWindow) {
@@ -80,8 +85,8 @@ window.focus();
     alert("Erlaube bitte Pop-ups für diese Seite.");
   }
 }
-  }
-);
+
+  });
 document.getElementById("uuidInput").addEventListener("input", function () {
     clearTimeout(fetchTimeout);
     hasFetchedStats = false; 
