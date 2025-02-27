@@ -97,7 +97,7 @@
             font-family: mcfont, sans-serif;
         }
 
-        /*.search-container button {
+     /*  .search-container button {
             padding: 10px;
             border: 1px solid #4CAF50;
             background-color: #4CAF50;
@@ -110,7 +110,6 @@
             width: 100%;
             font-family: mcfont, sans-serif; 
         }*/
-
         .search-container button:hover {
             background-color: #45a049;
         }
@@ -136,6 +135,7 @@
         }
         
         table {
+  backdrop-filter: blur(50px);
             animation: load 2s;
             width: 100%;
             border-collapse: collapse;
@@ -146,30 +146,27 @@
         th, td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
-            animation: blur 0.4s;
             font-family: mcfont, sans-serif;
         }
 
         th {
-            
+             backdrop-filter: blur(50px);
             cursor: pointer;
             font-family: mcfont, sans-serif;
         }
 
         th:hover {
-            background-color: #e0e0e0;
+ backdrop-filter: blur(50px);
             color: black;
         }
 
         tr:hover {
-            background-color: #abccbe;
+ backdrop-filter: blur(50px);
         }
 
         .loading {
             text-align: center;
             color: #999;
-            background-color: white;
             font-family: mcfont, sans-serif;
         }
 
@@ -191,7 +188,6 @@
         }
 
         #statsBody {
-            background-color: white;
         }
 #mtoast {
     display: none;
@@ -220,18 +216,24 @@
   border: 3px solid #ff8080;
 	
 }
-#dragdiv {
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  text-align: center;
-  border: 1px solid #d3d3d3;
+        .btn-holder {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .fetchbtn {
+  backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: mcfont, sans-serif;
 }
 
-#dragheader {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
+.fetchbtn:hover {
+	backdrop-filter: sepia(90%);
+    background-color: #959595;
+    transform: scale(1.05);
 }

@@ -1,10 +1,15 @@
-
-
+document.getElementById("runnrcBtn").addEventListener("click", function() {
+    window.location.href = 'minecraft.html';
+});
+function runnrc(){
+	 window.location.href = 'minecraft.html';
+	
+}
 var input = document.querySelectorAll("input")[0];
 input.select(); 
 input.value = "";
 
-var texts = ["NoRiskk", "KimiKaccess", "Aim_Shock", "AAirCrafter", "BigBrainRobin29", "ltsonyxx", "BestAuto", "Winniepat", "bybmfr", "bread", "//////////////////////////////////////////"]; 
+var texts = ["NoRiskk", "KimiKaccess", "Aim_Shock", "AAirCrafter", "BigBrainRobin29", "ltsonyxx", "BestAuto", "Winniepat", "bybmfr", "bread", "Du bist immer noch da? ich kann das nicht glauben drück das + weg, nein ich mein das ernst drück auf deiner Tastatur +", "WovenHorizon317"]; 
 var currentTextIndex = 1;
 var l = texts[currentTextIndex].length;
 var current = 0;
